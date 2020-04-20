@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="7.5" viewBox="0 0 12 7.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #111;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_-e-kz-few" data-name="-e-kz-few" class="cls-1" d="M1325.78,2196.22a0.725,0.725,0,0,1,.22.53v6a0.751,0.751,0,0,1-.75.75h-10.5a0.751,0.751,0,0,1-.75-0.75v-6a0.751,0.751,0,0,1,.75-0.75h10.5A0.725,0.725,0,0,1,1325.78,2196.22ZM1315.5,2202h6.75v-4.5h-6.75v4.5Z" transform="translate(-1314 -2196)"/>
+</svg>

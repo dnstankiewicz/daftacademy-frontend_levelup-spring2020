@@ -1,0 +1,253 @@
+// NAVBAR
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent!important;
+  
+    &-toggler {
+      outline: none;  
+    }
+  
+    .icon-button {
+      border:none;
+      background: none;
+      outline: none;
+    }
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #151515;
+    position: relative;
+    width: max-content;
+  
+    &:active, &:focus, &:hover {
+      color: #151515;
+    }
+
+    &::after {
+        content: '';
+        width: 0%;
+        color: black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1.6px solid black;
+        transition: all .3s ease-in;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+  }
+
+
+// BUTTON
+
+.btn {
+    @include jost-medium-black;
+    font-size: 13px;
+    background-color: transparent;
+    border: 2px solid #151515;
+    border-radius: 0;
+    padding: 18px 24px;
+
+    &:focus, &:active {
+        box-shadow: none;
+    }
+
+    &-invert {
+        transition: background-color .2s ease-in, color .2s ease-in;
+
+        &:hover {
+            background-color: #151515;
+            border-color: #151515;
+            color: #fff;
+        }
+    }
+}
+
+// CAROUSELL
+
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #263a49;
+    padding-bottom: 50px;
+}
+
+.glider-container {
+    margin: 0;
+}
+
+.glider.draggable {
+    overflow-x: hidden;
+}
+
+.glider-next, .glider-prev {
+    display: none;
+    position: static;
+    color: white;
+    border: 2px solid white;
+    line-height: 0;
+    outline: 0!important;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+}
+
+.glider-inner {
+    position: relative;
+    padding: 0 15px;
+
+    &__description {
+        position: absolute;
+        left: 20px;
+        bottom: 30px;
+    }
+
+    .description__title {
+        color: #454545;
+        margin-bottom: 0;
+    }
+
+    .description__price {
+        @include jost-bold;
+        margin-bottom: 0;
+    }
+}
+
+
+// CARD
+
+.card {
+    border: none;
+
+    &-body {
+        padding: 0;
+        padding-top: 16px;
+    }
+
+    &-img-top {
+        border-radius: 0;
+    }
+
+    &-title {
+        @include jost-bold;
+        font-size: 10px;
+    }
+
+    &-product__name {
+        @include jost-medium-grey;
+    }
+
+    &-product__price {
+        @include jost-bold;
+    }
+
+    &-product__sale {
+        @include jost-medium-grey;
+        text-decoration: line-through;
+    }
+
+    &-action__buy {
+        padding: 0;
+        border: none;
+    }
+
+    &-action__save {
+        border: none;
+        padding: 0 15px 0 0;
+    }
+}
+
+
+// ARTICLE
+
+.article {
+    position: relative;
+    @include media-breakpoint-up(md) { 
+        padding-left: 0;
+    }
+
+    &__pic-placeholder {
+        width: 100%;
+    }
+
+    &-description {
+        position: absolute;
+        top: 36px;
+        left: 30px;
+        max-width: 200px;
+
+        &__header {
+            font-size: 18px;
+        }
+
+        &__link {
+            width: max-content;
+            color: #151515;
+
+            &:hover {
+                color: #151515;
+                text-decoration: none;
+            }
+
+            &::after {
+                content: '';
+                width: 0%;
+                color: black;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-top: 1.6px solid black;
+                transition: all .3s ease-in;
+            }
+        
+            &:hover::after {
+                width: 57px;
+            }
+        }
+    }
+}
+
+
+// FORM
+
+.form {
+    max-width: 650px;
+
+    &-group {
+        border-bottom: 1.8px solid #151515;
+    }
+
+    &-control {
+        display: inline-block;
+        width: calc(100% - 100px);
+        border: none;
+        @include jost-medium-grey;
+        font-size: 13px;
+        color: rgba(69, 69, 69, 0.5);
+
+        &:focus, &:active {
+            box-shadow: none;
+        }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+
+    &-btn {
+        border: none;
+        padding: 0;
+        width: 90px;
+        height: calc(1.5em + 0.75rem + 2px);
+        text-align: right;
+    }
+}

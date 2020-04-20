@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'jost-medium';
+    src: url('../assets/fonts/Jost-500-Medium.woff2') format('woff2'),
+         url('../assets/fonts/Jost-500-Medium.woff') format('woff'),
+         url('../assets/fonts/Jost-500-Medium.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jost-bold';
+    src: url('../assets/fonts/Jost-700-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Jost-700-Bold.woff') format('woff'),
+         url('../assets/fonts/Jost-700-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin jost-medium-grey {
+    font-family: 'jost-medium',sans-serif;
+    color: #959595;
+}
+
+@mixin jost-medium-black {
+    font-family: 'jost-medium',sans-serif;
+    color: #151515;
+}
+
+@mixin jost-bold {
+    font-family: 'jost-bold',sans-serif;
+    color: #151515;
+}
