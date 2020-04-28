@@ -46,6 +46,11 @@
 				</ul>
 			</div>
 		</nav>
+		<a href="#home" class="btn-scroll-top">
+			<svg class="bi bi-chevron-up" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L8 5.707l-5.646 5.647a.5.5 0 01-.708-.708l6-6z" clip-rule="evenodd"/>
+			</svg>
+		</a>
 	</header>
 
 	<body>
@@ -133,7 +138,7 @@
 		<section id="elements" class="content-section">
 			<div class="py-5 container-md">
 				<h2 class="content-section__header">New Arrivals</h2>
-				<div class="row">
+				<div class="row card-container">
 					<div class="pt-4 col-6 col-md-3">
 						<div class="card">
 							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
@@ -316,7 +321,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="pt-5 col-12 d-flex justify-content-center">
+					<div class="pt-5 col-12 d-flex justify-content-center load-products">
 						<button class="btn btn-invert ">View all products</button>
 					</div>
 				</div>
@@ -441,7 +446,7 @@
 				<hr class="d-block d-md-none">
 				<div class="pt-5 row justify-content-around align-items-center">
 					<div class="col-12 col-md-4">
-						<p>&copy;2019 Zonex All rights reserved</p>
+						<p>&copy;<span class="copyright-year"></span> Zonex All rights reserved</p>
 					</div>
 					<div class="mb-3 col-12 col-md-4 d-flex justify-content-start justify-content-md-end">
 						<img src="https://via.placeholder.com/300x40" alt="Payment options">

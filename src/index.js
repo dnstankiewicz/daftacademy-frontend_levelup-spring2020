@@ -1,25 +1,17 @@
 import 'bootstrap';
-import '../node_modules/glider-js/glider.min.js';
+
+import carousel from './scripts/carousel';
+import scrollTop from './scripts/scroll-top-btn';
+import loadAllProducts from './scripts/load-products';
+import updateYear from './scripts/copyright-year';
+
 import './styles/style.scss';
 
-window.addEventListener('load', function(){
-    new Glider(document.querySelector('.glider'), {
-        slidesToShow: 1.5,
-        slidesToScroll: 1,
-        draggable: true,     
-        rewind: true,   
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 4.5,
-                slidesToScroll: 1,
-                arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
-                  },
-              }
-            }
-          ]
-      });
-})
+
+window.addEventListener('DOMContentLoaded', () => {
+    carousel();
+    scrollTop();
+    loadAllProducts();
+    updateYear();
+});
+
