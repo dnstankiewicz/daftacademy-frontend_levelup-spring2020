@@ -11,7 +11,9 @@
   "author": "Daniel Stankiewicz",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "jquery": "^3.4.1",
+    "swiper": "^5.4.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },

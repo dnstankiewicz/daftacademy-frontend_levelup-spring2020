@@ -7,7 +7,6 @@
 	<title>DaftAcademy Frontend LevelUp</title>
 </head>
 <main>
-	<!-- <main data-spy="scroll" data-target="#navbarResponsive"> -->
 	<header>
 		<!-- fixed-top -->
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -57,6 +56,13 @@
 		<section id="home">
 			<div class="home-bg"></div>
 		</section>
+
+		<div class="loader" id="loader">
+			<div class="loader__anim"></div>
+			<div class="loader__info">Loading products...</div>
+		</div>
+		<div class="failed" id="failed">An error occured :( Please try again later or contact our support team.</div>
+		
 		<section id="shop" class="content-section carousel-section">
 			<button role="button" aria-label="Previous" class="glider-btn glider-prev">
 				<svg class="bi bi-arrow-left-short" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -67,64 +73,7 @@
 			<div class="container-md glider-container">
 				<div class="glider-contain">
 					<div class="container-md">
-						<div class="glider">
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-							<div class="glider-inner">
-							<div class="glider-inner__description">
-								<p class="description__title">Name placeholder</p>
-								<p class="description__price">$99.99</p>
-							</div>
-							<img class="glider-inner__image" src="https://via.placeholder.com/220x338" alt="Silde image">
-							</div>
-					  	</div>
+						<div class="glider draggable" id="glider-input"></div>
 					</div>
 				</div>
 			</div>
@@ -135,241 +84,19 @@
 				</svg>
 			</button>
 		</section>
-		<section id="elements" class="content-section">
+		<section id="elements" class="content-section card-section">
 			<div class="py-5 container-md">
 				<h2 class="content-section__header">New Arrivals</h2>
-				<div class="row card-container">
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="btn card-action__buy">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button> </div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button> </div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button> 
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-4 col-6 col-md-3">
-						<div class="card">
-							<img src="https://via.placeholder.com/309x390" class="item-pic-placeholder card-img-top"
-								alt="Item placeholder">
-							<div class="card-body">
-								<h5 class="card-title">
-									<img class="icon-placeholder" src="./assets/9 View mobile/kz-number-one.svg" alt="Number One icon">
-									ICON PLACEHOLDER
-								</h5>
-								<p class="card-product__name">PRODUCT NAME PLACEHOLDER</p>
-								<p class="card-product__price">PRICE $ <span class="card-product__sale">SALES $</span>
-								</p>
-								<div class="card-action d-flex justify-content-between">
-									<button class="card-action__buy btn">
-										ADD TO CARD
-									</button>
-									<button class="btn card-action__save">
-										<img src="./assets/9 View mobile/-e-kz-heart.svg" alt="Hearth icon">
-									</button> 
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pt-5 col-12 d-flex justify-content-center load-products">
+				<div class="row card-container" id="card-input">
+					<div class="pt-5 col-12 d-flex justify-content-center load-products" id="view-more">
 						<button class="btn btn-invert ">View all products</button>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="blog" class="content-section">
+		<section id="blog" class="content-section blog-section">
 			<div class="container-md">
-				<div class="row">
-					<div class="mt-2 col-12 col-md-5 article">
-						<div class="article-description">
-							<h5 class="article-description__header">ARTICLE NAME PLACEHOLDER</h5>
-							<a href="#" class="article-description__link">Shop now</a>
-							
-						</div>
-						<img src="https://via.placeholder.com/547x630" class="article__pic-placeholder"
-							alt="Article placeholder">
-					</div>
-					<div class="mt-2 col-12 col-md-7">
-						<div class="row">
-							<div class="mt-2 mt-md-0 col-12 col-md-6 article">
-								<div class="article-description">
-									<h5 class="article-description__header">ARTICLE NAME PLACEHOLDER</h5>
-									<a href="#" class="article-description__link">Shop now</a>
-								</div>
-								<img src="https://via.placeholder.com/380x310" class="article__pic-placeholder"
-									alt="Article placeholder">
-							</div>
-							<div class="mt-2 mt-md-0 col-12 col-md-6 article">
-								<div class="article-description">
-									<h5 class="article-description__header">ARTICLE NAME PLACEHOLDER</h5>
-									<a href="#" class="article-description__link">Shop now</a>
-								</div>
-								<img src="https://via.placeholder.com/380x310" class="article__pic-placeholder"
-									alt="Article placeholder">
-							</div>
-						</div>
-						<div class="row">
-							<div class="mt-2 col-12 article">
-								<div class="article-description">
-									<h5 class="article-description__header">ARTICLE NAME PLACEHOLDER</h5>
-									<a href="#" class="article-description__link">Shop now</a>
-								</div>
-								<img src="https://via.placeholder.com/769x310" class="article__pic-placeholder"
-									alt="Article placeholder">
-							</div>
-						</div>
-					</div>
-				</div>
+				<div class="row" id="article-input"></div>
 			</div>
 		</section>
 		<section id="page" class="content-section">
