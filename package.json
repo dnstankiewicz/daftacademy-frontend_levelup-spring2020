@@ -28,7 +28,7 @@
     "glider-js": "^1.7.2",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.16.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
